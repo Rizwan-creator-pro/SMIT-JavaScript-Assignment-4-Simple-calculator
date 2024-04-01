@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <main>
+        <div class="calbg" id="calbg">
+            <div class="circles">
+                <div id="circle1" onclick="dark()"></div>
+                <div id="circle2" onclick="light()"></div>
+            </div>
+            <div id="display"></div>
+            <div class="buttons">
+                <table>
+                    <tr>
+                        <td><button id="clear" onclick="clearAll()">C</button></td>
+                        <td><button id="operator" onclick="handleGetValue('/')">÷</button></td>
+                        <td><button id="operator" onclick="handleGetValue('*')">×</button></td>
+                        <td><button id="operator" onclick="sliceWord()">&lt;</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="number" onclick="handleGetValue('7')">7</button></td>
+                        <td><button id="number" onclick="handleGetValue('8')">8</button></td>
+                        <td><button id="number" onclick="handleGetValue('9')">9</button></td>
+                        <td><button id="operator" onclick="handleGetValue('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="number" onclick="handleGetValue('4')">4</button></td>
+                        <td><button id="number" onclick="handleGetValue('5')">5</button></td>
+                        <td><button id="number" onclick="handleGetValue('6')">6</button></td>
+                        <td><button id="operator" onclick="handleGetValue('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="number" onclick="handleGetValue('1')">1</button></td>
+                        <td><button id="number" onclick="handleGetValue('2')">2</button></td>
+                        <td><button id="number" onclick="handleGetValue('3')">3</button></td>
+                        <td rowspan="2"><button id="equal" onclick="handleCalculate()">=</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button id="number" onclick="handleGetValue('0')">0</button></td>
+                        <td><button id="number" onclick="handleGetValue('00')">00</button></td>
+                        <td><button id="operator" onclick="handleGetValue('.')">·</button></td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </main>
+    <!-- Custom js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
